@@ -1,5 +1,119 @@
-*{
+/* TicTacToe.css */
+
+/* Styles for the main game container */
+.game {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+/* Styles for the game board */
+.game-board {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Style for the game status */
+.status {
+  font-weight: 800;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Styles for each row of the game board */
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
+/* Styles for each square on the game board */
+.square {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.square:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Styles for the game info panel */
+.game-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  width: 200px;
+  margin-left: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* Styles for the list of moves */
+.game-info ol {
+  list-style: none;
+  padding-left: 0;
+  font-size: 16px;
+}
+
+.game-info li {
+  margin-bottom: 5px;
+}
+
+/* Styles for buttons */
+button {
+  font-size: 14px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for player's name */
+.name {
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #333;
+  font-weight: bolder;
+}
+.footer {
+  margin-top: 25px;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+html,
+body {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
 }
